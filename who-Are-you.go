@@ -37,4 +37,24 @@ func main() {
 		return
 	}
 	fmt.Println("GREAT!.. AGE :", age, "has been saved to memory!!")
+
+	var gender string
+	fmt.Println("GENDER VERIFICATION")
+	fmt.Println()
+	fmt.Println("what is your gender??..")
+	fmt.Println("MALE or FEMALE")
+	fmt.Scanln(&gender)
+
+	switch gender {
+	case "MALE", "male":
+		fmt.Println("okay", firstname, lastname, "your gender is MALE..")
+
+	case "FEMALE", "female":
+		fmt.Println("okay", firstname, lastname, "your gender is FEMALE")
+
+	default:
+		fmt.Println("ERROR!!..", gender, "is not matching a gender type")
+		fmt.Println("provide a gender type (MALE OR FEMALE)")
+	}
+
 }
